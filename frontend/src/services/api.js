@@ -19,4 +19,7 @@ export const getVehicleDetails = (vehicleNumber) =>
 export const getTrips = (projectId) =>
   API.get(`/trips?project_id=${projectId}`)
 
+export const getRouteCoordinates = (route) =>
+  API.get(`/route_coordinates?route=${route}`)
+
 export default API
