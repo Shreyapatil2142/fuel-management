@@ -1,0 +1,426 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Fuel Management",
+		"_postman_id": "172bec26-06da-9ef9-8694-0454783ebc67",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dashboard Count",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/dashboard?project_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"dashboard"
+					],
+					"query": [
+						{
+							"key": "project_id",
+							"value": "1"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project Vehicles List",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/project_vehicles?project_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"project_vehicles"
+					],
+					"query": [
+						{
+							"key": "project_id",
+							"value": "1"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles List",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/vehicles",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles Location List",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/vehicles_locations?vehicle_number=ABCD1234",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"vehicles_locations"
+					],
+					"query": [
+						{
+							"key": "vehicle_number",
+							"value": "ABCD1234"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle Details",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/vehicle_details?vehicle_number=XYZS8765",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"vehicle_details"
+					],
+					"query": [
+						{
+							"key": "vehicle_number",
+							"value": "XYZS8765"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Route Co-Ordinates",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/route_coordinates?route=ROUTE-1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"route_coordinates"
+					],
+					"query": [
+						{
+							"key": "route",
+							"value": "ROUTE-1"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Trips",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/trips?project_id=1&start_date=2024-01-01&end_date=2024-10-09",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"trips"
+					],
+					"query": [
+						{
+							"key": "project_id",
+							"value": "1"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-10-09"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "IoT Device",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/iotrecords?vehicle_number=ABCD1234&start_date=2024-05-11&end_date=2024-05-12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"iotrecords"
+					],
+					"query": [
+						{
+							"key": "vehicle_number",
+							"value": "ABCD1234"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-05-11"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-05-12"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project wise Fuel Shortage",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/fuel_shortage",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project wise Alerts",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/project_wise_alerts",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project wise Distance",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/project_wise_distance",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles Short of Fuel",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/vehicle_short_of_fuel",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Halted Vehicles",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/halted_vehicles",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Ideal Vehicles",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/ideal_vehicles",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Running Vehicles",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/running_vehicles",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " Vehicles_report_stats",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/vehicle_report_stats",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project wise fuel difference",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/project_wise_fuel_difference",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project wise fuel collection",
+			"request": {
+				"url": "http://127.0.0.1:5000/api/project_wise_fuel_collection",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
